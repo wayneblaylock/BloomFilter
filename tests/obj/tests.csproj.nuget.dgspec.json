@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wayne\\code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj": {}
+    "C:\\Users\\wayne\\Code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wayne\\code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj": {
+    "C:\\Users\\wayne\\Code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wayne\\code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj",
+        "projectUniqueName": "C:\\Users\\wayne\\Code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj",
         "projectName": "tests",
-        "projectPath": "C:\\Users\\wayne\\code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj",
+        "projectPath": "C:\\Users\\wayne\\Code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\tests.csproj",
         "packagesPath": "C:\\Users\\wayne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wayne\\code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\obj\\",
+        "outputPath": "C:\\Users\\wayne\\Code\\School\\DataStructuresAndAlgorithsm\\BloomFilter\\tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
