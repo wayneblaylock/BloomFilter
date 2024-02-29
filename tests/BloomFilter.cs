@@ -1,4 +1,4 @@
-public interface IPartialSet {
+public interface IPartialSet{
    void Add(string key);
    bool Contains(string key);
 }
@@ -25,7 +25,7 @@ public class bloomFilter : IPartialSet{
         int firstAscii = Convert.ToInt32(first);
         int secondAscii = Convert.ToInt32(second);
 
-        return (11 * firstAscii + secondAscii) % size;
+        return (11 * firstAscii + secondAscii) % check1.Length;
     }
    public int Hash2(string key){
 
@@ -36,7 +36,7 @@ public class bloomFilter : IPartialSet{
         int firstAscii = Convert.ToInt32(first);
         int lastAscii = Convert.ToInt32(last);
 
-        return (7 * firstAscii + 5 * lastAscii) % size;
+        return (7 * firstAscii + 5 * lastAscii) % check1.Length;
     }
     public int Hash3(string key){
         
@@ -49,7 +49,7 @@ public class bloomFilter : IPartialSet{
         int secondAscii = Convert.ToInt32(second);
         int lastAscii = Convert.ToInt32(last);
 
-        return (firstAscii * secondAscii * lastAscii) % size;
+        return (firstAscii * secondAscii * lastAscii) % check1.Length;
     }
     
     
