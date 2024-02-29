@@ -17,10 +17,18 @@ public class bloomFilter : IPartialSet{
     }
 
     public int Hash1(string key){
-        return 0;
+
+        int size = key.Length;
+        char first = key[0];
+        char second = key[1];
+
+        int firstAscii = Convert.ToInt32(first);
+        int secondAscii = Convert.ToInt32(second);
+
+        return (11 * firstAscii + secondAscii) % size;
     }
    public int Hash2(string key){
-        
+
         int size = key.Length;
         char first = key[0];
         char last = key[size - 1];
