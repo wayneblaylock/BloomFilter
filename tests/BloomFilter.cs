@@ -19,11 +19,29 @@ public class bloomFilter : IPartialSet{
     public int Hash1(string key){
         return 0;
     }
-    public int Hash2(string key){
-        return 0;
+   public int Hash2(string key){
+        
+        int size = key.Length;
+        char first = key[0];
+        char last = key[size - 1];
+        
+        int firstAscii = Convert.ToInt32(first);
+        int lastAscii = Convert.ToInt32(last);
+
+        return (7 * firstAscii + 5 * lastAscii) % size;
     }
     public int Hash3(string key){
-        return 0;
+        
+        int size = key.Length;
+        char first = key[0];
+        char second = key[1];
+        char last = key[size - 1];
+        
+        int firstAscii = Convert.ToInt32(first);
+        int secondAscii = Convert.ToInt32(second);
+        int lastAscii = Convert.ToInt32(last);
+
+        return (firstAscii * secondAscii * lastAscii) % size;
     }
     
     
