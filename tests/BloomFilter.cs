@@ -54,9 +54,13 @@ public class bloomFilter : IPartialSet{
     
     
     public void Add(string key){
-
+        if (check1[Hash1(key)] && check2[Hash2(key)] && check3[Hash3(key)]) PossibleFalsePositives ++;
+        check1[Hash1(key)] = true;
+        check2[Hash2(key)] = true;
+        check3[Hash3(key)] = true;
     }
     public bool Contains(string key){
-        return false;
+        if (check1[Hash1(key)] && check2[Hash2(key)] && check3[Hash3(key)]) return true;
+        else return false;
     }
 }
